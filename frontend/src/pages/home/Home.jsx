@@ -2,6 +2,7 @@ import React from 'react'
 import { Arrow } from '../../components/arrow/Arrow'
 import { About } from '../../components/home/about/About'
 import { MainSection } from '../../components/home/mainSection/MainSection'
+import { MyStack } from '../../components/home/myStack/MyStack'
 import './Home.scss'
 
 export const Home = () => {
@@ -10,6 +11,7 @@ export const Home = () => {
       <MainSection />
       <Arrow hlink={'#about'} />
       <About />
+      <MyStack />
     </>
   )
 }
