@@ -1,0 +1,38 @@
+// $lightFont: 
+$darkHeadFont: #171a20;
+$darkTextFont: #393c41;
+
+@font-face {
+    font-family: 'GothamSSm';
+    src: url('./font/GothamSSm-Book.otf');
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'GothamSSm', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $darkTextFont;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.container {
+    padding: 0 200px;
+}
+
+.heading {
+    font-weight: 500;
+    color: $darkHeadFont;
+}
+
+.heading.heading2 {
+    font-size: 28px;
+}
