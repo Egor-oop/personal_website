@@ -1,4 +1,4 @@
-// $lightFont: 
+$lightFont: #fff;
 $darkHeadFont: #171a20;
 $darkTextFont: #393c41;
 
@@ -24,13 +24,25 @@ h1 {
     padding: 12px 0;
 }
 
+section {
+    height: 100vh;
+    padding: 100px 0;
+}
+
 .container {
-    padding: 0 200px;
+    padding: 100px 200px;
+    box-sizing: border-box;
 }
 
 .heading {
     font-weight: 500;
     color: $darkHeadFont;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.heading.dr-th {
+    color: $lightFont !important;
 }
 
 .heading.heading2 {

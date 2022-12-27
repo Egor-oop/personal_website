@@ -1,8 +1,13 @@
 .main-section {
     display: flex;
-    height: 100vh;
     gap: 40px;
     align-items: center;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 .avatar {
@@ -10,10 +15,4 @@
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
-}
-
-.main-section__text {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
