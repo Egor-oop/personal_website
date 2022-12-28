@@ -11,6 +11,10 @@ $darkTextFont: #393c41;
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'GothamSSm', 'Helvetica Neue', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -25,7 +29,6 @@ h1 {
 }
 
 section {
-    height: 100vh;
     padding: 100px 0;
 }
 
