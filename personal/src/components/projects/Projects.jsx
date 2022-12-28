@@ -6,9 +6,9 @@ export const Projects = () => {
     return (
         <section
             id='projectsSection'
-            className={`container ${styles['projects-section']} ${sectionStyles['dr-section']}`}
+            className={`container ${styles['projects-section']} ${sectionStyles['lg-section']}`}
         >
-            <span className='heading heading2 dr-th'>Проекты</span>
+            <span className='heading heading2'>Проекты</span>
             <p>oshdj</p>
         </section>
     )

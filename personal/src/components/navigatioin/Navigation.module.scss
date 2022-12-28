@@ -16,6 +16,12 @@
         padding: 12px 20px;
         border-radius: 50px;
         display: inline-block;
+        transition: margin-left .3s cubic-bezier(0.39, 0.58, 0.57, 1);
+        max-width: 120px;
+    }
+
+    &__hlink:hover {
+        margin-left: 10px;
     }
 }
 
