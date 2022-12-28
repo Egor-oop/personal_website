@@ -1,10 +1,14 @@
 import { Main } from "./components/main/Main"
+import { Projects } from "./components/projects/Projects"
+import { Navigation } from "./components/navigatioin/Navigation"
 
 function App() {
     return (
-        <div className=''>
+        <>
+            <Navigation />
             <Main />
-        </div>
+            <Projects />
+        </>
     )
 }
 

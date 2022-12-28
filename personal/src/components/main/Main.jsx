@@ -6,7 +6,10 @@ import avatar from '../../img/m3.jpg'
 
 export const Main = () => {
     return (
-        <section className={`container ${styles['main-section']} ${sectionStyles['lg-section']}`}>
+        <section
+            id='mainSection'
+            className={`container ${styles['main-section']} ${sectionStyles['lg-section']}`}
+        >
             <div className=''>
                 <img src={avatar} alt="Фото" className={styles['avatar']} />
             </div>

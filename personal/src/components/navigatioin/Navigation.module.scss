@@ -1,0 +1,28 @@
+@use '../../index.scss' as ind;
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    // top: 50%; left: 20px; translate: translate(-50%, -50%);
+    top: 50%;
+    margin-left: 20px;
+    transform: translate(0, -50%);
+
+    &__hlink {
+        background-color: #ffffff;
+        padding: 12px 20px;
+        border-radius: 50px;
+        display: inline-block;
+    }
+}
+
+.nav>a {
+    color: ind.$darkTextFont;
+}
+
+.nav>a:hover {
+    color: ind.$darkHeadFont;
+}
