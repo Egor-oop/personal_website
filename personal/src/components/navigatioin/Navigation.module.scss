@@ -26,6 +26,10 @@
 @media (max-width: 768px) {
     .nav {
         display: none;
+        
+        &__hlink:hover {
+            margin-left: 0;
+        }
     }
 }
 
