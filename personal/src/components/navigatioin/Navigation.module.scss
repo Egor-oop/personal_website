@@ -5,8 +5,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-    // top: 50%; left: 20px; translate: translate(-50%, -50%);
     top: 50%;
     margin-left: 20px;
     transform: translate(0, -50%);
@@ -22,6 +20,12 @@
 
     &__hlink:hover {
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
     }
 }
 
