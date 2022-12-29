@@ -1,0 +1,63 @@
+@use '../../index.scss' as ind;
+
+.toggle {
+    position: fixed;
+    display: none;
+    width: 100%;
+
+    &>a {
+        color: ind.$darkTextFont;
+    }
+
+    &__btn {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    &__btn:hover {
+        cursor: pointer;
+    }
+
+    &__btn:hover &__btn>div {
+        background-color: #535355;
+    }
+
+    &__btn>div {
+        width: 30px;
+        height: 3px;
+        background-color: #727079;
+        border-radius: 2px;
+    }
+
+    &__menu {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    &__menu-active {
+        display: block;
+    }
+    &__menu-inactive {
+        display: none;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__links>a {
+        color: ind.$darkTextFont;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: inline-block;
+    }
+}
