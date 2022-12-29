@@ -9,7 +9,7 @@ function App() {
             <Navigation />
             <Main />
             <Skills />
-            <Projects />
+            {/* <Projects /> */}
         </>
     )
 }
