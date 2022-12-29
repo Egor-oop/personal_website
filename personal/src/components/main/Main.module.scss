@@ -2,7 +2,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
-    height: 100vh;
+    // height: 100vh;
 
     &__text {
         display: flex;
@@ -16,4 +16,21 @@
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+@media (max-width: 1224px) {
+    .avatar {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    // .avatar {
+    //     width: 400px;
+    //     height: 400px;
+    // }
+    .main-section {
+        flex-direction: column;
+    }
 }

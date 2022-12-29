@@ -60,3 +60,15 @@ section {
     font-size: 20px;
     margin: 16px 0;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 70px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        padding: 70px 20px;
+    }
+}
