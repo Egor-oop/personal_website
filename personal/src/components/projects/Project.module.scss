@@ -1,0 +1,14 @@
+@use '../../index.scss' as ind;
+
+.project {
+
+    &__image {
+        width: 100%;
+        background-color: #d0d0d5;
+    }
+
+    &__url {
+        color: ind.$darkTextFont;
+        text-decoration: none;
+    }
+}

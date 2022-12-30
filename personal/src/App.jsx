@@ -11,7 +11,7 @@ function App() {
             <Toggle />
             <Main />
             <Skills />
-            {/* <Projects /> */}
+            <Projects />
         </>
     )
 }
