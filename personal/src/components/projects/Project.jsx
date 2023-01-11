@@ -3,7 +3,7 @@ import styles from './Project.module.scss'
 
 export const Project = ({ imgUrl, title, url, description }) => {
     return (
-        <a href={url} target='_blank' className={styles['project__url']}>
+        <a href={url} target='_blank' rel="noreferrer" className={styles['project__url']}>
             <div className={styles['project']}>
                 <img src={imgUrl} alt="" className={styles['project__image']} />
                 <span className='heading heading3'>{title}</span>

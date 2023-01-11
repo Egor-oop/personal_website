@@ -17,7 +17,7 @@ export const Projects = () => {
         }
 
         getProjects()
-    }, [])
+    })
 
     return (
         <section
@@ -31,6 +31,7 @@ export const Projects = () => {
                         title={proj.title}
                         description={proj.description}
                         url={proj.url}
+                        key={proj.id}
                     />
                 ))}
             </div>
