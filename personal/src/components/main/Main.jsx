@@ -17,7 +17,8 @@ export const Main = () => {
                 <span className='heading heading2'>
                     Привет! Я Егор Гулидо
                 </span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam labore eum fuga laboriosam in rerum ab saepe tempora eligendi nobis maiores itaque illum blanditiis, incidunt aperiam, debitis ipsam dolore, voluptates vel! Delectus iusto maxime tempore laudantium id! Recusandae sit quos neque sed a dolores illum, repellat distinctio quo dolorum!</p>
+                <p>Я программист из России. 🇷🇺 <br /> Я разрабатываю API для различных задач при помощи Django Rest framework и FastAPI. Также я разрабатываю frontend на JavaScript с React для своих проектов. 🚀
+                </p>
             </div>
         </section>
     )
