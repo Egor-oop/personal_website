@@ -4,6 +4,7 @@ import { Navigation } from "./components/navigatioin/Navigation"
 import { Skills } from "./components/skills/Skills"
 import { Toggle } from "./components/navigatioin/Toggle"
 import { Footer } from "./components/footer/Footer"
+import { WorkExperience } from "./components/work/WorkExperience"
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Main />
             <Skills />
             <Projects />
+            <WorkExperience />
             <Footer />
         </>
     )
