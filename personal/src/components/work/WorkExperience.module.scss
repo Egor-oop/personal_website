@@ -1,0 +1,8 @@
+.work-experience-section {
+
+    &__works {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

@@ -1,0 +1,28 @@
+@use '../../index.scss' as ind;
+
+.workcard {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    transition: box-shadow .5s;
+    color: ind.$darkTextFont;
+
+    &__url {
+        text-decoration: none;
+    }
+
+    &__role {
+        display: block;
+        padding-bottom: 4px;
+    }
+
+    &__date {
+        display: block;
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+}
+
+.workcard:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
