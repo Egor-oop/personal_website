@@ -17,7 +17,8 @@ export const Projects = () => {
         }
 
         getProjects()
-    })
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <section

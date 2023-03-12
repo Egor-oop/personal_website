@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './WorkExperience.module.scss'
 import sectionStyles from '../../section.module.scss'
 import { WorkCard } from './WorkCard'
 
-export const WorkExperience = () => {
-    const [workExperience, setWorkExperience] = React.useState([])
+import { collection, getDocs } from 'firebase/firestore'
+import { db } from '../../firebaseConfig'
 
+export const WorkExperience = () => {
+    const [workExperience, setWorkExperience] = useState([])
+    const workExperienceRef = collection(db, 'works')
+
+    useEffect(() => {
+        const getWorkExperience = async () => {
+            const data = await getDocs(workExperienceRef)
+            setWorkExperience(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+        }
+
+        getWorkExperience()
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <section
@@ -19,17 +32,12 @@ export const WorkExperience = () => {
                         title={work.title}
                         description={work.description}
                         url={work.url}
+                        role={work.role}
+                        startDate={work.start_date}
+                        endDate={work.end_date}
                         key={work.id}
                     />
                 ))}
-                <WorkCard
-                    title={'asdfasdf'}
-                    description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull.'}
-                    url={'https://github.com/Egor-oop'}
-                    role={'Developer'}
-                    startDate={'ajk 2000'}
-                    endDate={'jo 2020'}
-                />
             </div>
         </section>
     )
